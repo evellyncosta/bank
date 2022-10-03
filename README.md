@@ -34,4 +34,4 @@ Ao logar no PGAdmin pela primeira vez, será necessário criar a conexão, lembr
 
 ```host.docker.internal```
 
-## Na raiz do projeto existe uma collection que pode ser importada para o Postman
+### Na raiz do projeto existe uma collection que pode ser importada para o Postman
