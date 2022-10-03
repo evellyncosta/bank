@@ -1,9 +1,7 @@
 package com.pismo.bank.model;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,6 +20,7 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotNull(message="document number is required")
+    @JsonProperty("document_number")
     private String documentNumber;
 
     public Long getId() {
@@ -36,7 +35,7 @@ public class Account {
         return documentNumber;
     }
 
-    public void setDocumentNumber(String document_number) {
-    	documentNumber = document_number;
+    public void setDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
     }
 }
