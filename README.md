@@ -33,3 +33,5 @@ Para abrir a linha de comando do PostgreSql:
 Ao logar no PGAdmin pela primeira vez, será necessário criar a conexão, lembre-se de que o host é a rede interna do docker, portanto, a url de conexão do banco deve ser:
 
 ```host.docker.internal```
+
+Na raiz do projeto existe uma collection que pode ser importada para o Postman
